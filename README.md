@@ -20,3 +20,5 @@ amount for every copy) or by a sinusidal factor (oscillating for each
 copy).
 
 Experimentation is key.
+
+Available on [inkscape.org](https://inkscape.org/~tgk/%E2%98%85lirror).
