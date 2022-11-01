@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <_name>Lirror</_name>
+    <id>test.apex.lirror</id>
+   <dependency type="executable" location="extensions">lirror.py</dependency>
+   <dependency type="executable" location="extensions">inkex.py</dependency>
+   <param name="copies" type="int" min="1" max="1000" _gui-text="Copies:">10</param>
+   <label xml:space="preserve">Angle</label>
+   <param name="angle" type="float" min="0.0" max="360.0" _gui-text="Angle:">45</param>
+   <param name="angleincrement" type="optiongroup" appearance="radio/combo" gui-text="Angle increment">
+     <option value="linear">Linear</option>
+     <option value="sinusidal">Sinusidal</option>
+   </param>
+   <param name="sinusidalscale" type="float" min="0.0" max="20.0" _gui-text="Sinusidal scale:">1</param>
+   <label xml:space="preserve">Shift</label>
+   <param name="deltax" type="float" min="0.0" max="1000.0" _gui-text="Delta X:">0</param>
+   <param name="deltay" type="float" min="0.0" max="1000.0" _gui-text="Delta y:">0</param>
+   <param name="deltaincrement" type="optiongroup" appearance="radio/combo" gui-text="Delta increment">
+     <option value="linear">Linear</option>
+     <option value="sinusidal">Sinusidal</option>
+   </param>
+   <param name="deltasinusidalscale" type="float" min="0.0" max="20.0" _gui-text="Sinusidal scale:">1</param>
+   <label xml:space="preserve">Scale</label>
+   <param name="scalex" type="float" precision="2" min="0.1" max="10.0" _gui-text="Scale x:">1</param>
+   <param name="scaley" type="float" precision="2" min="0.1" max="10.0" _gui-text="Scale y:">1</param>
+   <effect>
+   <object-type>path</object-type>
+     <effects-menu>
+       <submenu _name="Modify Path"/>
+     </effects-menu>
+   </effect>
+   <script>
+     <command reldir="extensions" interpreter="python">lirror.py</command>
+   </script>
+</inkscape-extension>

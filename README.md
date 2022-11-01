@@ -1,2 +1,3 @@
 # lirror
-Inkscape extension for creating generative art
+
+Inkscape extension for creating generative art.
