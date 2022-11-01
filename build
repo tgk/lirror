@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+rm -rf target
+mkdir -p target/lirror
+cp lirror.py target/lirror
+cp lirror.inx target/lirror
+cd target
+zip ../lirror.zip -r lirror/
+cd ..
